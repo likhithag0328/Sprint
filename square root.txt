@@ -1,0 +1,16 @@
+3 5
+number:121 sqrt:0
+3 con1
+mul:0 num1:0 num2:0 check:0 zero:0 one:1
+con1:5 number mul yes1
+1 num1 one num1
+7 num1 num2
+7 zero check
+7 zero mul
+con2:4 check num1 yes2
+1 num2 mul mul
+1 check one check
+3 con2
+yes2:3 con1
+yes1:2 num1 one sqrt
+9
