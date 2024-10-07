@@ -1,0 +1,14 @@
+3 start
+a:0 b:0 result:0 address:0
+two:2
+start:0 7 a
+      0 5 b
+      0 call address
+      1 two address address
+      call:3 add
+
+half:9
+
+add:7 address return
+    1 a b result
+    3 return:0
