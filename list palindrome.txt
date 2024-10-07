@@ -1,0 +1,30 @@
+3 6
+
+first_element_location:51
+length:5
+result:2
+
+3 start
+
+one:1
+two:2
+last:0
+first:0
+
+start:7 first_element_location first
+      1 first length last
+      2 last one last
+
+loop:5 last first halt
+     7 last l1
+     7 first f1
+     4 l1:0 f1:0 eq
+     7 one result
+
+halt:9
+
+eq:1 one first first
+   2 last one last
+   3 loop
+
+1 2 7 2 1
