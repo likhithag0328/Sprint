@@ -1,0 +1,112 @@
+3 start
+inpt1:0 inpt2:0 result:0 return_address:0
+p_in:0 p_ret:0
+one:1 two:2
+popped:0
+
+start:0 stack read
+      0 read:0 top
+
+0 5 p_in
+0 call1 p_ret
+1 two p_ret p_ret
+call1:3 push
+
+0 7 p_in
+0 call2 p_ret
+1 two p_ret p_ret
+call2:3 push
+
+0 call_add return_address
+1 two return_address return_address
+
+7 return_address p_in
+0 call3 p_ret
+1 two p_ret p_ret
+call3:3 push
+
+call_add:3 addition
+
+0 call4 p_ret
+1 two p_ret p_ret
+call4:3 pop
+7 popped result
+
+halt:9
+
+
+
+addition:0 a_call4 p_ret
+         1 two p_ret p_ret
+         a_call4:3 pop
+         7 popped a_ret
+
+         0 2 p_in
+         0 a_call1 p_ret
+         1 two p_ret p_ret
+         a_call1:3 push
+
+         0 call_sub return_address
+         1 two return_address return_address
+
+         7 return_address p_in
+         0 a_call8 p_ret
+         1 two p_ret p_ret
+         a_call8:3 push
+
+         call_sub:3 subtraction
+
+         0 a_call5 p_ret
+         1 two p_ret p_ret
+         a_call5:3 pop
+         7 popped inpt1
+
+         0 a_call6 p_ret
+         1 two p_ret p_ret
+         a_call6:3 pop
+         7 popped inpt2
+
+         1 inpt1 inpt2 p_in
+         0 a_call7 p_ret
+         1 two p_ret p_ret
+         a_call7:3 push
+         3 a_ret:0
+
+
+
+subtraction:0 s_call4 p_ret
+            1 two p_ret p_ret
+            s_call4:3 pop
+            7 popped s_ret
+
+            0 s_call5 p_ret
+            1 two p_ret p_ret
+            s_call5:3 pop
+            7 popped inpt1
+
+            0 s_call6 p_ret
+            1 two p_ret p_ret
+            s_call6:3 pop
+            7 popped inpt2
+
+            2 inpt2 inpt1 p_in
+            0 s_call7 p_ret
+            1 two p_ret p_ret
+            s_call7:3 push
+            3 s_ret:0
+
+
+
+pop:7 p_ret ret1
+    2 top one top
+    7 top p
+    7 p:0 popped
+    3 ret1:0
+
+push:7 p_ret ret
+     7 p_in value
+     0 value:0 top:0
+     1 one top top
+     3 ret:0
+
+stack:
