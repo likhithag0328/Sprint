@@ -1,0 +1,17 @@
+3 7
+first_element_location:list
+length:5
+target:2
+result:0
+3 start
+check:0
+one:1
+start:7 first_element_location index
+condition:4 index:0 target yes
+1 one index index
+1 one check check
+4 check length halt
+3 condition
+yes:7 one result
+halt:9
+list:1 2 3 4 5
