@@ -1,0 +1,21 @@
+3 start
+
+a:0 b:0 result:0 address:0
+
+one:1 two:2 check:0
+
+start:0 7 a
+      0 5 b
+      0 call address
+      1 two address address
+      call:3 mul
+
+halt:9
+
+mul:7 address return
+    mul1:4 check a ret
+    1 b result result
+    1 check one check
+    3 mul1
+    1 a b result
+    ret:3 return:0
