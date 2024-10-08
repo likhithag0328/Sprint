@@ -1,0 +1,197 @@
+3 sprint__start
+
+sprint__pro__address:program
+sprint__op:0
+sprint__a:0
+sprint__add__this:0
+sprint__read:0
+
+sprint__zero:0
+sprint__one:1
+sprint__two:2
+sprint__three:3
+sprint__four:4
+sprint__five:5
+sprint__seven:7
+sprint__nine:9
+
+sprint__start:0 sprint__dup:program sprint__read
+              2 sprint__dup sprint__one sprint__add__this
+              7 sprint__read sprint__pointer
+
+sprint__copy:7 sprint__pointer:0 sprint__op
+
+sprint__zero1:4 sprint__op sprint__zero sprint__ifzero
+sprint__one1:4 sprint__op sprint__one sprint__ifone
+sprint__two1:4 sprint__op sprint__two sprint__iftwo
+sprint__three1:4 sprint__op sprint__three sprint__ifthree
+sprint__four1:4 sprint__op sprint__four sprint__iffour
+sprint__five1:4 sprint__op sprint__five sprint__iffive
+sprint__seven1:4 sprint__op sprint__seven sprint__ifseven
+sprint__nine1:4 sprint__op sprint__nine sprint__ifnine
+
+7 sprint__op sprint__instr
+sprint__instr:0
+
+sprint__ifzero:1 sprint__one sprint__pointer sprint__z1
+               7 sprint__z1:0 sprint__a
+               1 sprint__two sprint__pointer sprint__pointer
+               7 sprint__pointer sprint__za2
+               5 sprint__za2:0 sprint__pro__address sprint__zy1
+               7 sprint__pointer sprint__zl2
+               7 sprint__zl2:0 sprint__z4
+               3 sprint__zc3
+               sprint__zy1:7 sprint__pointer sprint__z2
+               1 sprint__add__this sprint__z2:0 sprint__z4
+               sprint__zc3:0 sprint__z3:0 sprint__z4:0
+               1 sprint__pointer sprint__one sprint__pointer
+               3 sprint__copy
+
+sprint__ifone:sprint__oc1:1 sprint__one sprint__pointer sprint__pointer
+              7 sprint__pointer sprint__oa1
+              5 sprint__oa1:0 sprint__pro__address sprint__oy1
+              7 sprint__pointer sprint__ol1
+              7 sprint__ol1:0 sprint__o4
+              3 sprint__oc2
+              sprint__oy1:7 sprint__pointer sprint__o1
+              1 sprint__add__this sprint__o1:0 sprint__o4
+              sprint__oc2:1 sprint__one sprint__pointer sprint__pointer
+              7 sprint__pointer sprint__oa2
+              5 sprint__oa2:0 sprint__pro__address sprint__oy2
+              7 sprint__pointer sprint__ol2
+              7 sprint__ol2:0 sprint__o5
+              3 sprint__oc3
+              sprint__oy2:7 sprint__pointer sprint__o2
+              1 sprint__add__this sprint__o2:0 sprint__o5
+              sprint__oc3:1 sprint__one sprint__pointer sprint__pointer
+              7 sprint__pointer sprint__oa3
+              5 sprint__oa3:0 sprint__pro__address sprint__oy3
+              7 sprint__pointer sprint__ol3
+              7 sprint__ol3:0 sprint__o6
+              3 sprint__oc4
+              sprint__oy3:7 sprint__pointer sprint__o3
+              1 sprint__add__this sprint__o3:0 sprint__o6
+              sprint__oc4:1 sprint__o4:0 sprint__o5:0 sprint__o6:0
+              1 sprint__pointer sprint__one sprint__pointer
+              3 sprint__copy
+
+sprint__iftwo:sprint__tc1:1 sprint__one sprint__pointer sprint__pointer
+              7 sprint__pointer sprint__ta1
+              5 sprint__ta1:0 sprint__pro__address sprint__ty1
+              7 sprint__pointer sprint__tl1
+              7 sprint__tl1:0 sprint__t4
+              3 sprint__tc2
+              sprint__ty1:7 sprint__pointer sprint__t1
+              1 sprint__add__this sprint__t1:0 sprint__t4
+              sprint__tc2:1 sprint__one sprint__pointer sprint__pointer
+              7 sprint__pointer sprint__ta2
+              5 sprint__ta2:0 sprint__pro__address sprint__ty2
+              7 sprint__pointer sprint__tl2
+              7 sprint__tl2:0 sprint__t5
+              3 sprint__tc3
+              sprint__ty2:7 sprint__pointer sprint__t2
+              1 sprint__add__this sprint__t2:0 sprint__t5
+              sprint__tc3:1 sprint__one sprint__pointer sprint__pointer
+              7 sprint__pointer sprint__ta3
+              5 sprint__ta3:0 sprint__pro__address sprint__ty3
+              7 sprint__pointer sprint__tl3
+              7 sprint__tl3:0 sprint__t6
+              3 sprint__tc4
+              sprint__ty3:7 sprint__pointer sprint__t3
+              1 sprint__add__this sprint__t3:0 sprint__t6
+              sprint__tc4:2 sprint__t4:0 sprint__t5:0 sprint__t6:0
+              1 sprint__pointer sprint__one sprint__pointer
+              3 sprint__copy
+
+sprint__ifthree:1 sprint__one sprint__pointer sprint__th1
+                7 sprint__th1:0 sprint__a
+                5 sprint__a sprint__dup sprint__add
+                7 sprint__a sprint__pointer
+                3 sprint__copy
+                sprint__add:1 sprint__add__this sprint__a sprint__pointer
+                3 sprint__copy
+
+sprint__iffour:sprint__fc1:1 sprint__one sprint__pointer sprint__pointer
+               7 sprint__pointer sprint__fa1
+               5 sprint__fa1:0 sprint__pro__address sprint__fy1
+               7 sprint__pointer sprint__fl1
+               7 sprint__fl1:0 sprint__f4
+               3 sprint__fc2
+               sprint__fy1:7 sprint__pointer sprint__f1
+               1 sprint__add__this sprint__f1:0 sprint__f4
+               sprint__fc2:1 sprint__one sprint__pointer sprint__pointer
+               7 sprint__pointer sprint__fa2
+               5 sprint__fa2:0 sprint__pro__address sprint__fy2
+               7 sprint__pointer sprint__fl2
+               7 sprint__fl2:0 sprint__f5
+               3 sprint__fc3
+               sprint__fy2:7 sprint__pointer sprint__f2
+               1 sprint__add__this sprint__f2:0 sprint__f5
+               sprint__fc3:1 sprint__one sprint__pointer sprint__pointer
+               7 sprint__pointer sprint__fa3
+               5 sprint__fa3:0 sprint__pro__address sprint__fy3
+               7 sprint__pointer sprint__fl3
+               7 sprint__fl3:0 sprint__f6
+               3 sprint__fc4
+               sprint__fy3:7 sprint__pointer sprint__f3
+               1 sprint__add__this sprint__f3:0 sprint__f6
+               sprint__fc4:4 sprint__f4:0 sprint__f5:0 sprint__yes4
+               1 sprint__one sprint__pointer sprint__pointer
+               3 sprint__copy
+               sprint__yes4:0 sprint__f6:0 sprint__pointer
+               3 sprint__copy
+
+sprint__iffive:sprint__vc1:1 sprint__one sprint__pointer sprint__pointer
+               7 sprint__pointer sprint__va1
+               5 sprint__va1:0 sprint__pro__address sprint__vy1
+               7 sprint__pointer sprint__vl1
+               7 sprint__vl1:0 sprint__v4
+               3 sprint__vc2
+               sprint__vy1:7 sprint__pointer sprint__v1
+               1 sprint__add__this sprint__v1:0 sprint__v4
+               sprint__vc2:1 sprint__one sprint__pointer sprint__pointer
+               7 sprint__pointer sprint__va2
+               5 sprint__va2:0 sprint__pro__address sprint__vy2
+               7 sprint__pointer sprint__vl2
+               7 sprint__vl2:0 sprint__v5
+               3 sprint__vc3
+               sprint__vy2:7 sprint__pointer sprint__v2
+               1 sprint__add__this sprint__v2:0 sprint__v5
+               sprint__vc3:1 sprint__one sprint__pointer sprint__pointer
+               7 sprint__pointer sprint__va3
+               5 sprint__va3:0 sprint__pro__address sprint__vy3
+               7 sprint__pointer sprint__vl3
+               7 sprint__vl3:0 sprint__v6
+               3 sprint__vc4
+               sprint__vy3:7 sprint__pointer sprint__v3
+               1 sprint__add__this sprint__v3:0 sprint__v6
+               sprint__vc4:5 sprint__v4:0 sprint__v5:0 sprint__yes5
+               1 sprint__one sprint__pointer sprint__pointer
+               3 sprint__copy
+               sprint__yes5:0 sprint__v6:0 sprint__pointer
+               3 sprint__copy
+
+
+sprint__ifseven:1 sprint__one sprint__pointer sprint__pointer
+                7 sprint__pointer sprint__sa1
+                5 sprint__sa1:0 sprint__pro__address sprint__sy1
+                7 sprint__pointer sprint__sl1
+                7 sprint__sl1:0 sprint__s3
+                3 sprint__sc2
+                sprint__sy1:7 sprint__pointer sprint__s1
+                1 sprint__add__this sprint__s1:0 sprint__s3
+                sprint__sc2:1 sprint__one sprint__pointer sprint__pointer
+                7 sprint__pointer sprint__sa2
+                5 sprint__sa2:0 sprint__pro__address sprint__sy2
+                7 sprint__pointer sprint__sl2
+                7 sprint__sl2:0 sprint__s4
+                3 sprint__sc3
+                sprint__sy2:7 sprint__pointer sprint__s2
+                1 sprint__add__this sprint__s2:0 sprint__s4
+                sprint__sc3:7 sprint__s3:0 sprint__s4:0
+                1 sprint__pointer sprint__one sprint__pointer
+                3 sprint__copy
+
+sprint__ifnine:9
+
+program:
